@@ -1,0 +1,110 @@
+/* Site Containers
+--------------------------------------- */
+
+.site {
+  position: relative;
+}
+
+.site-content {
+  padding-top: $content-spacing;
+}
+
+.site-content,
+.wrap {
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  max-width: 768px;
+
+  @include media($small-screen-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include media($medium-screen-up) {
+    max-width: 960px;
+  }
+
+  @include media($large-screen-up) {
+    max-width: 1140px;
+  }
+}
+
+/* Column Widths and Positions
+--------------------------------------- */
+
+/* Content Area
+--------------------------------------- */
+
+.layout-1c-narrow .content-area {
+  padding: 0;
+}
+
+@include media($medium-screen-up) {
+
+  .layout-1c-narrow .content-area {
+    padding: 0 15%;
+  }
+  .layout-2c-l .content-area,
+  .layout-2c-r .content-area {
+    @include span-columns(8);
+  }
+
+  .layout-2c-r .content-area {
+    @include omega();
+    float: right;
+  }
+
+  .sidebar-primary {
+    @include span-columns(4);
+  }
+
+  .layout-2c-l .sidebar-primary {
+    @include omega();
+    float: right;
+  }
+}
+
+.layout-1c .sidebar-primary,
+.layout-1c-narrow .sidebar {
+  display: none;
+}
+
+/* Column Classes
+--------------------------------------- */
+
+@include media($small-screen-up) {
+
+  .one-half {
+    @include span-columns(6);
+  }
+
+  .one-third {
+    @include span-columns(4);
+  }
+
+  .two-thirds {
+    @include span-columns(8);
+  }
+
+  .one-fourth {
+    @include span-columns(3);
+  }
+
+  .three-fourths {
+    @include span-columns(9);
+  }
+
+  .one-sixth {
+    @include span-columns(2);
+  }
+
+  .five-sixths {
+    @include span-columns(10);
+  }
+
+  .last {
+    @include omega();
+    clear: right;
+  }
+}

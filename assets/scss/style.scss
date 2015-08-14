@@ -1,0 +1,138 @@
+/*
+Theme Name: Taylor
+Theme URI: http://selenastrain.com/taylor/
+Author: Selena Strain
+Author URI: http://selenastrain.com/
+Description: Taylor is a starter theme using Grunt, Sass, Bourbon, Neat and Hybrid Core.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: taylor
+Tags: one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, featured-images, sticky-post, threaded-comments, translation-ready
+
+Taylor is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+Taylor also has some love from Hybrid Core 
+http://themehybrid.com/hybrid-core, (C) 2008 - 2015, Justin Tadlock
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+TABLE OF CONTENTS:
+----------------------------------------------------------------
+Normalize
+Defaults
+  Typography
+  Elements
+  Forms
+  Tables
+  Lists
+  Buttons
+Structure and Layout
+  Site Containers
+  Column Widths and Positions
+  Column Classes
+Header
+Navigation
+	Menus
+  Pagination
+Accessibility
+Alignments
+Clearings
+Content
+  Entries
+	Asides
+	Comments
+Sidebars
+Footer
+Widgets
+Media
+	Captions
+	Galleries
+Plugins
+  Jetpack
+  Gravity Forms
+--------------------------------------------------------------*/
+
+@import "bourbon/bourbon";
+@import "variables/neat-grid";
+@import "neat/neat";
+@import "variables/variables";
+@import "variables/mixins-master";
+
+/*--------------------------------------------------------------
+Normalize
+--------------------------------------------------------------*/
+@import "defaults/normalize";
+
+/* --------------------------------------------------------------
+Defaults
+-------------------------------------------------------------- */
+@import "defaults/base";
+
+/* --------------------------------------------------------------
+Structure and Layout
+-------------------------------------------------------------- */
+@import "partials/layout";
+
+/* --------------------------------------------------------------
+Header
+-------------------------------------------------------------- */
+@import "partials/header";
+
+/*--------------------------------------------------------------
+Navigation
+--------------------------------------------------------------*/
+@import "partials/navigation";
+@import "partials/pagination";
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+@import "partials/accessibility";
+
+/*--------------------------------------------------------------
+Alignments
+--------------------------------------------------------------*/
+@import "partials/alignments";
+
+/*--------------------------------------------------------------
+Clearings
+--------------------------------------------------------------*/
+@import "partials/clearings";
+
+/*--------------------------------------------------------------
+Content
+--------------------------------------------------------------*/
+@import "partials/entries";
+@import "partials/comments";
+
+/* --------------------------------------------------------------
+Sidebars
+-------------------------------------------------------------- */
+@import "partials/sidebars";
+
+/* --------------------------------------------------------------
+Footer
+-------------------------------------------------------------- */
+@import "partials/footer";
+
+/*--------------------------------------------------------------
+Widgets
+--------------------------------------------------------------*/
+@import "partials/widgets";
+
+/*--------------------------------------------------------------
+Media
+--------------------------------------------------------------*/
+@import "partials/media";
+@import "partials/captions";
+@import "partials/galleries";
+
+/* --------------------------------------------------------------
+Plugins
+-------------------------------------------------------------- */
+@import "partials/plugins";
+

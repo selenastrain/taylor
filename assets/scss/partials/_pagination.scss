@@ -1,0 +1,48 @@
+/* Pagination
+--------------------------------------- */
+.pagination {
+  margin: 0 0 $content-spacing;
+
+  .page-numbers {
+    background: $dark-gray;
+    padding: 10px 12px;
+    color: #fff;
+  }
+
+  .current {
+    background: $base-link-color;
+  }
+
+  a {
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background: $base-link-color;
+    }
+  }
+}
+
+/* Post Navigation
+--------------------------------------- */
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+  word-wrap: break-word;
+  
+  .site-main & {
+    margin: 0 0 $base-spacing;
+    overflow: hidden;
+  }
+
+  & .nav-previous {
+    float: left;
+    width: 50%;
+  }
+
+  & .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+  }
+}

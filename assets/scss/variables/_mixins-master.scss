@@ -1,0 +1,19 @@
+// Mixins
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 16) {
+  font-size: $sizeValue + px;
+  font-size: rem($sizeValue);
+}
+
+// Border radius
+@mixin border-radius($radius) {
+  background-clip: padding-box; /* stops bg color from leaking outside the border: */
+  border-radius: $radius;
+}
+
+// Center block
+@mixin center-block {
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,30 @@
+.site-header {
+  background-color: $alt-background-color;
+  padding: 0 5%;
+
+  @include media($small-screen-up) {
+    padding: 0;
+  }
+
+  .wrap {
+    padding: $content-spacing 0;
+  }
+}
+
+.site-branding {
+  padding: 10px 0;
+}
+
+.site-title {
+  
+  a,
+  a:hover,
+  a:focus {
+    color: $base-font-color;
+  }
+}
+
+.site-description {
+  @include font-size(18);
+  line-height: $base-line-height;
+}

@@ -1,0 +1,87 @@
+/* Comments
+--------------------------------------- */
+.comments-area,
+.comment-respond {
+  background-color: $alt-background-color;
+  margin: 0 0 $content-spacing;
+  padding: $content-spacing-half;
+  border: $base-border;
+  word-wrap: break-word;
+
+  @include media($small-screen-up) {
+    padding: $content-spacing;
+  }
+}
+
+.comments-number {
+  margin-bottom: $content-spacing-half;
+}
+
+.comment-meta {
+  display: inline-block;
+  @include font-size(16);
+}
+
+.comment-author {
+  @include font-size(20);
+  font-style: normal;
+}
+
+.comment-author::before {
+  content: none;
+}
+
+.comment-list {
+
+  .comment {
+    margin-bottom: $content-spacing-half;
+    padding: $content-spacing-half;
+    border-bottom: $base-border;
+
+    @include media($small-screen-up) {
+      padding: $content-spacing;
+    }
+
+    .comment {
+      margin-top: $content-spacing-half;
+    }
+
+    .comment:first-child {
+      border-top: $base-border;
+    }
+
+    .comment:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+}
+
+.comment-content {
+  clear: both;
+
+  ul {
+    @extend %default-ul;
+
+    ul {
+      margin-bottom: 0;
+    }
+  }
+
+  ol {
+    @extend %default-ol;
+
+    ol {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    word-wrap: break-word;
+  }
+}
+
+.bypostauthor {
+  display: block;
+}

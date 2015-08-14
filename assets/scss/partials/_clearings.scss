@@ -1,0 +1,13 @@
+/* Float Clearing
+--------------------------------------- */
+
+.clear,
+.entry-content,
+.comment-meta,
+.comment-content,
+.site-header,
+.site-content,
+.site-footer,
+.wrap {
+  @include clearfix;
+}
