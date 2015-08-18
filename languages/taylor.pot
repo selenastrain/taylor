@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Taylor 1.0.0\n"
 "Report-Msgid-Bugs-To: http://selenastrain.com/contact/\n"
-"POT-Creation-Date: 2015-08-14 14:15:05+00:00\n"
+"POT-Creation-Date: 2015-08-18 16:00:24+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,7 +23,7 @@ msgid "Permalink"
 msgstr ""
 
 #: content/aside.php:13 content/audio.php:15 content/audio.php:43
-#: content/content.php:12 content/content.php:48 content/gallery.php:13
+#: content/content.php:14 content/content.php:52 content/gallery.php:13
 #: content/gallery.php:43 content/image.php:25 content/image.php:52
 #: content/link.php:13 content/link.php:42 content/quote.php:32
 #: content/status.php:50 content/video.php:15 content/video.php:43
@@ -31,7 +31,7 @@ msgid "Leave a comment"
 msgstr ""
 
 #: content/aside.php:13 content/audio.php:15 content/audio.php:43
-#: content/content.php:12 content/content.php:48 content/gallery.php:13
+#: content/content.php:14 content/content.php:52 content/gallery.php:13
 #: content/gallery.php:43 content/image.php:25 content/image.php:52
 #: content/link.php:13 content/link.php:42 content/quote.php:32
 #: content/status.php:50 content/video.php:15 content/video.php:43
@@ -39,22 +39,22 @@ msgid "1 Comment"
 msgstr ""
 
 #: content/aside.php:13 content/audio.php:15 content/audio.php:43
-#: content/content.php:12 content/content.php:48 content/gallery.php:13
+#: content/content.php:14 content/content.php:52 content/gallery.php:13
 #: content/gallery.php:43 content/image.php:25 content/image.php:52
 #: content/link.php:13 content/link.php:42 content/quote.php:32
 #: content/status.php:50 content/video.php:15 content/video.php:43
 msgid "% Comments"
 msgstr ""
 
-#: content/aside.php:25 content/audio.php:27 content/content.php:24
-#: content/content.php:59 content/gallery.php:25 content/image.php:37
+#: content/aside.php:25 content/audio.php:27 content/content.php:26
+#: content/content.php:63 content/gallery.php:25 content/image.php:37
 #: content/link.php:25 content/quote.php:15 content/status.php:23
 #: content/video.php:27
 msgid "Posted in %s"
 msgstr ""
 
-#: content/aside.php:26 content/audio.php:28 content/content.php:25
-#: content/content.php:60 content/gallery.php:26 content/image.php:38
+#: content/aside.php:26 content/audio.php:28 content/content.php:27
+#: content/content.php:64 content/gallery.php:26 content/image.php:38
 #: content/link.php:26 content/quote.php:16 content/status.php:24
 #: content/video.php:28
 msgid "Tagged %s"
@@ -63,7 +63,7 @@ msgstr ""
 #: content/aside.php:27 content/attachment-audio.php:19
 #: content/attachment-image.php:35 content/attachment-video.php:19
 #: content/attachment.php:18 content/audio.php:29 content/audio.php:63
-#: content/content.php:26 content/content.php:61 content/gallery.php:27
+#: content/content.php:28 content/content.php:65 content/gallery.php:27
 #: content/gallery.php:55 content/image.php:39 content/image.php:62
 #: content/link.php:27 content/link.php:43 content/page.php:13
 #: content/quote.php:17 content/quote.php:33 content/status.php:25
