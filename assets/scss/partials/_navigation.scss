@@ -135,7 +135,37 @@
   }
 }
 
+/* Breadcrumb Trail
+--------------------------------------- */
 .breadcrumb-trail {
   margin-bottom: $content-spacing-half;
   word-wrap: break-word;
+
+  @include font-size(16);
+
+  .trail-browse {
+    @include font-size(16);
+    font-weight: 600;
+    display: inline-block;
+  }
+
+  .trail-items,
+  .trail-item {
+    display: inline-block;
+  }
+
+  .trail-item {
+
+    span {
+      padding: 0 5px;
+    }
+
+    &:after {
+      content: '/';
+    }
+
+    &.trail-end:after {
+      content: '';
+    }
+  }
 }
