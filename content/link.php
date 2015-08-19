@@ -8,8 +8,11 @@
 
       <div class="entry-meta">
         <?php hybrid_post_format_link(); ?>
+        <span class="sep">&mdash;</span>
         <span <?php hybrid_attr( 'entry-author' ); ?>><?php the_author_posts_link(); ?></span>
+        <span class="sep">&mdash;</span>
         <time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
+        <span class="sep">&mdash;</span>
         <?php comments_popup_link( __( 'Leave a comment', 'taylor' ), __( '1 Comment', 'taylor' ), __( '% Comments', 'taylor' ), 'comments-link', '' ); ?>
       </div><!-- .entry-meta -->
 
@@ -37,8 +40,11 @@
     <footer class="entry-footer">
       <div class="entry-meta">
         <?php hybrid_post_format_link(); ?>
+        <span class="sep">&mdash;</span>
         <time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
+        <span class="sep">&mdash;</span>
         <a href="<?php the_permalink(); ?>" class="entry-permalink" rel="bookmark" itemprop="url"><?php _e( 'Permalink', 'taylor' ); ?></a>
+        <span class="sep">&mdash;</span>
         <?php comments_popup_link( __( 'Leave a comment', 'taylor' ), __( '1 Comment', 'taylor' ), __( '% Comments', 'taylor' ), 'comments-link', '' ); ?>
         <?php edit_post_link( __( 'Edit', 'taylor' ), '<span class="edit-link">', '</span>' ); ?>
       </div>

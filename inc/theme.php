@@ -41,6 +41,52 @@ function taylor_register_sidebars() {
 }
 add_action( 'widgets_init', 'taylor_register_sidebars' );
 
+function taylor_register_layouts() {
+
+  $image_dir = trailingslashit( get_template_directory_uri() ) . 'assets/images/';
+
+  hybrid_register_layout(
+    '1c',
+    array(
+      'label'             => _x( '1 Column Wide', 'theme layout', 'taylor' ),
+      'is_global_layout'  => true,
+      'is_post_layout'    => true,
+      'image'             => $image_dir . 'layout-width-full.svg'
+    )
+  );
+
+  hybrid_register_layout(
+    '1c-narrow',
+    array(
+      'label'             => _x( '1 Column Narrow', 'theme layout', 'taylor' ),
+      'is_global_layout'  => true,
+      'is_post_layout'    => true,
+      'image'             => $image_dir . 'layout-width-default.svg'
+    )
+  );
+
+  hybrid_register_layout(
+    '2c-l',
+    array(
+      'label'             => _x( '2 Columns: Content / Sidebar', 'theme layout', 'taylor' ),
+      'is_global_layout'  => true,
+      'is_post_layout'    => true,
+      'image'             => $image_dir . 'layout-sidebar-right.svg'
+    )
+  );
+
+  hybrid_register_layout(
+    '2c-r',
+    array(
+      'label'             => _x( '2 Columns: Sidebar / Content', 'theme layout', 'taylor' ),
+      'is_global_layout'  => true,
+      'is_post_layout'    => true,
+      'image'             => $image_dir . 'layout-sidebar-left.svg'
+    )
+  );
+}
+add_action( 'hybrid_register_layouts', 'taylor_register_layouts' );
+
 function taylor_enqueue_scripts() {
   $js_dir = trailingslashit( get_template_directory_uri() ) . 'assets/js/';
 
@@ -52,8 +98,9 @@ add_action( 'wp_enqueue_scripts', 'taylor_enqueue_scripts' );
 function taylor_register_styles() {
   $css_dir = trailingslashit( get_template_directory_uri() ) . 'assets/css/';
 
-  wp_register_style( 'google-fonts', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' );
-  wp_register_style( 'font-awesome', $css_dir . 'font-awesome.min.css' );
+  wp_enqueue_style( 'hybrid-style' );
+  wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' );
+  wp_enqueue_style( 'font-awesome', $css_dir . 'font-awesome.min.css' );
 
 }
 add_action( 'wp_enqueue_scripts', 'taylor_register_styles', 4 );
