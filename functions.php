@@ -27,22 +27,7 @@ function taylor_setup() {
 	require_once( trailingslashit( get_template_directory() ) . 'inc/theme.php' );
 
 	// Theme Layouts
-	add_theme_support(
-		'theme-layouts',
-		array(
-			'1c'				=> __( '1 Column Wide', 								'taylor' ),
-			'1c-narrow' => __( '1 Column Narrow', 							'taylor' ),
-			'2c-l'			=> __( '2 Columns: Content / Sidebar', 	'taylor' ),
-			'2c-r'			=> __( '2 Columns: Sidebar / Content', 	'taylor' ),
-		),
-		array( 'default' => is_rtl() ? '2c-r' : '2c-l' )
-	);
-
-	// Load stylesheets
-	add_theme_support(
-		'hybrid-core-styles',
-		array( 'style', 'google-fonts', 'font-awesome' ) 
-	);
+	add_theme_support( 'theme-layouts',  array( 'default' => is_rtl() ? '2c-r' : '2c-l' ) );
 
 	// Enable custom template hierarchy
 	add_theme_support( 'hybrid-core-template-hierarchy' );
