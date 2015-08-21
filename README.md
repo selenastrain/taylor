@@ -7,3 +7,7 @@ Taylor uses [Grunt](http://gruntjs.com/) to compile the SCSS files and run the s
 ## Documentation
 
 Coming Soon
+
+## Changelog
+
+See [changelog.md](https://github.com/selenastrain/taylor/blob/master/changelog.md)
