@@ -41,9 +41,12 @@ module.exports = function(grunt) {
       },
     },
 
-    autoprefixer: {
+    postcss: {
       options: {
-        browers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1', 'ie 9']
+        map: true,
+        processors: [
+          require('autoprefixer-core')({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1', 'ie 9']})
+        ]
       },
       single_file: {
         src: 'style.css',
@@ -70,7 +73,7 @@ module.exports = function(grunt) {
           potFilename: 'taylor.pot',
           type: 'wp-theme',
           processPot: function( pot, options ) {
-            pot.headers['report-msgid-bugs-to'] = 'http://selenastrain.com/contact/';
+            pot.headers['report-msgid-bugs-to'] = 'https://selenastrain.com/contact/';
             pot.headers['last-translator'] = 'Selena Strain';
             pot.headers['language-team'] = 'Selena Strain';
             return pot;
@@ -84,7 +87,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('release', [
     'sass:release',
-    'autoprefixer',
+    'postcss',
     'csscomb',
     'makepot'
   ]);
