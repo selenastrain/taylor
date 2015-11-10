@@ -42,9 +42,9 @@
   .entry-footer & {
     margin-top: $base-spacing / 2;
   }
-  
+
   a {
-    background: $base-button-color;
+    background: $action-color;
     border-radius: $base-border-radius;
     color: #fff;
     @include font-size(14);
@@ -54,7 +54,7 @@
 
     &:hover {
       color: #fff;
-      background: $hover-button-color;
+      background: shade($action-color, 25%);
     }
   }
 }

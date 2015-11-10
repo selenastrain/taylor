@@ -35,13 +35,15 @@ $light-gray:      #ddd;
 $alt-gray:        #ccc;
 $alt-light-gray:  #f5f5f5;
 $alt-medium-gray: #e0e0e0;
-$light-red:       #fbe3e4;
-$light-yellow:    #fff6bf;
-$light-green:     #e6efc2;
 
 // Font Colors
 $base-font-color:   $dark-gray;
 $action-color:      $blue;
+
+// Border
+$base-border-color: $light-gray;
+$base-border:       1px solid $base-border-color;
+$abbr-border-color: #666;
 
 // Background Color
 $base-background-color:   $alt-light-gray;
@@ -50,42 +52,14 @@ $alt-background-color:    #fff;
 $pre-background-color:    #eee;
 $ins-background-color:    #fff9c0;
 
-// Link Colors
-$base-link-color:     $action-color;
-$hover-link-color:    darken($action-color, 15);
-$main-nav-link-color: lighten($action-color, 15);
-$base-button-color:   $base-link-color;
-$hover-button-color:  $hover-link-color;
-
-// Flash Colors
-$alert-color:   $light-yellow;
-$error-color:   $light-red;
-$notice-color:  lighten($action-color, 40);
-$success-color: $light-green;
-
-// Border color
-$base-border-color: lighten($light-gray, 5);
-$base-border:       1px solid $base-border-color;
-$abbr-border-color: #666;
-
 // Screen Reader Colors
 $screen-background: #f1f1f1;
 $screen-text:       #21759b;
 
 // Forms
-$form-box-shadow:         inset 0 1px 1px rgba(#000, 0.06);
+$form-box-shadow:         inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus:   $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
 
-// Screen sizes
-$smallest-screen: 320px;
-$smaller-screen:  480px;
-$small-screen:    810px;
-$medium-screen:   1023px;
-$large-screen:    1180px;
-
-// Breakpoints
-$smallest-screen-up: new-breakpoint(min-width $smallest-screen  4);
-$smaller-screen-up:  new-breakpoint(min-width $smaller-screen   6);
-$small-screen-up:    new-breakpoint(min-width $small-screen    12);
-$medium-screen-up:   new-breakpoint(min-width $medium-screen   12);
-$large-screen-up:    new-breakpoint(min-width $large-screen    12);
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

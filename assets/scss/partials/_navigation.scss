@@ -20,7 +20,7 @@
   .current-menu-item a,
   .current-menu-ancestor a,
   .current-menu-parent a {
-    color: $hover-link-color;
+    color: shade($action-color, 25%);
   }
 
   .sub-menu {
@@ -45,7 +45,7 @@
       .current-menu-item {
         a:hover,
         a:focus {
-          color: $base-link-color;
+          color: $action-color;
         }
       }
 
@@ -85,7 +85,7 @@
 
   .menu-item {
     display: block;
-  
+
     @include media($small-screen-up) {
       display: inline-block;
     }
@@ -100,7 +100,7 @@
   .current-menu-item a,
   .current-menu-ancestor a,
   .current-menu-parent a {
-    color: $main-nav-link-color;
+    color: tint($action-color, 50%);
   }
 
   .sub-menu {
@@ -114,7 +114,7 @@
 
   a:hover,
   a:focus {
-    color: $hover-link-color;
+    color: shade($action-color, 25%);
   }
 }
 
