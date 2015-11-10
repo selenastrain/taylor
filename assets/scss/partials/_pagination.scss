@@ -14,7 +14,7 @@
   }
 
   .current {
-    background: $base-link-color;
+    background: $action-color;
   }
 
   a {
@@ -22,7 +22,7 @@
 
     &:hover,
     &:focus {
-      background: $base-link-color;
+      background: $action-color;
     }
   }
 }
@@ -32,7 +32,7 @@
 .posts-navigation,
 .post-navigation {
   word-wrap: break-word;
-  
+
   .site-main & {
     margin: 0 0 $base-spacing;
     overflow: hidden;
@@ -51,12 +51,12 @@
 }
 
 .post-navigation {
-  line-height: $base-line-height; 
+  line-height: $base-line-height;
 }
 
 .comments-nav {
   padding-top: $content-spacing;
-  
+
   a,
   .page-numbers {
     display: inline-block;

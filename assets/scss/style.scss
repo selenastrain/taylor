@@ -12,7 +12,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, c
 
 Taylor is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 
-Taylor also has some love from Hybrid Core 
+Taylor also has some love from Hybrid Core
 http://themehybrid.com/hybrid-core, (C) 2008 - 2015, Justin Tadlock
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -57,10 +57,10 @@ Plugins
 --------------------------------------------------------------*/
 
 @import "bourbon/bourbon";
-@import "variables/neat-grid";
+@import "defaults/grid-settings";
 @import "neat/neat";
-@import "variables/variables";
-@import "variables/mixins-master";
+@import "defaults/variables";
+@import "defaults/mixins";
 
 /*--------------------------------------------------------------
 Normalize
@@ -135,4 +135,3 @@ Media
 Plugins
 -------------------------------------------------------------- */
 @import "partials/plugins";
-

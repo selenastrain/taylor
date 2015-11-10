@@ -1,23 +1,20 @@
 a {
-
-  color: $base-link-color;
+  color: $action-color;
   text-decoration: none;
-  transition: color 0.1s linear;
+  transition: $base-duration $base-timing;
 
+  &:active,
+  &:focus,
   &:hover {
-    color: $hover-link-color;
-  }
-
-  &:active, 
-  &:focus {
-    color: $hover-link-color;
-    outline: none;
+    color: shade($action-color, 25%);
   }
 }
 
 hr {
-  border: none;
   border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
   margin: $base-spacing 0;
 }
 
@@ -47,12 +44,6 @@ cite {
   }
 }
 
-b,
-strong {
-  font-weight: bold;
-}
-
-dfn,
 cite,
 em,
 i {
@@ -70,46 +61,27 @@ pre {
   line-height: $base-line-height;
   margin: 0 0 $base-spacing;
   max-width: 100%;
-  overflow: auto;
   padding: 1.5em;
-
 }
 
-code, 
-kbd, 
-tt, 
+code,
+kbd,
+tt,
 var {
   @include font-size(15);
   font-family: $code-font-family;
 }
 
-abbr, 
+abbr,
 acronym {
   border-bottom: 1px dotted $abbr-border-color;
   cursor: help;
 }
 
-mark, 
+mark,
 ins {
   background: $ins-background-color;
   text-decoration: none;
-}
-
-sup,
-sub {
-  font-size: 75%;
-  height: 0;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  bottom: 1ex;
-}
-
-sub {
-  top: .5ex;
 }
 
 small {
@@ -119,4 +91,3 @@ small {
 big {
   font-size: 125%;
 }
-

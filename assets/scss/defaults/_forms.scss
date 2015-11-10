@@ -27,30 +27,36 @@ label {
 }
 
 #{$all-text-inputs},
-textarea,
 select[multiple=multiple] {
-  @include transition(border-color);
-  background-color: $base-background-color; 
+  background-color: $base-background-color;
   border-radius: $base-border-radius;
   border: $base-border;
   box-shadow: $form-box-shadow;
   box-sizing: border-box;
   font-family: $base-font-family;
   @include font-size($base-font-size);
-  font-weight: normal;
-  margin-bottom: $base-spacing / 2;
+  margin-bottom: $small-spacing;
   padding: $base-spacing / 3;
-  transition: border-color;
+  transition: border-color $base-duration $base-timing;
   width: 100%;
 
   &:hover {
-    border-color: darken($base-border-color, 10);
+    border-color: shade($base-border-color, 20%);
   }
 
   &:focus {
     border-color: $action-color;
     box-shadow: $form-box-shadow-focus;
     outline: none;
+  }
+
+  &:disabled {
+    background-color: shade($base-background-color, 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: $base-border;
+    }
   }
 }
 
@@ -59,13 +65,17 @@ textarea {
 }
 
 input[type="search"] {
-  @include appearance(none);
+  appearance: none;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
   margin-right: $small-spacing / 2;
+
+  + label {
+    display: inline-block;
+  }
 }
 
 input[type="file"] {
@@ -81,7 +91,7 @@ select {
 
 input {
   @include placeholder {
-    color: $medium-gray;
+    color: shade($base-font-color, 10%);
     @include font-size(16);
   }
 }

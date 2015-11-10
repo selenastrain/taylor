@@ -1,14 +1,13 @@
-// Bitters 1.0.0
+// Bitters 1.1.0
 // http://bitters.bourbon.io
 // Copyright 2013-2015 thoughtbot, inc.
 // MIT License
 
 body {
-  @include font-feature-settings("kern", "liga", "pnum");
-  -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
   color: $base-font-color;
   font-family: $base-font-family;
+  font-feature-settings: "kern", "liga", "pnum";
   @include font-size($base-font-size);
   line-height: $base-line-height;
 }
