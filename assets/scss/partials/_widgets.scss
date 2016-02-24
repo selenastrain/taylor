@@ -6,7 +6,7 @@
   select {
     max-width: 100%;
   }
-  
+
   ol {
     @extend %default-ol;
   }
@@ -16,7 +16,7 @@
     margin: 0 0 0 30px;
     padding: 0;
   }
-  
+
 }
 
 /* Search widget. */
@@ -37,26 +37,24 @@
 /* Subsidiary Widgets
 --------------------------------------- */
 
-@include media($medium-screen-up) {
+@include breakpoint(large) {
 
   .sidebar-col-2 {
-
     .widget {
-      @include span-columns(6);
+      @include span(6);
 
       &:nth-child(2n) {
-        @include omega();
+        @include last();
       }
     }
   }
 
   .sidebar-col-3 {
-
     .widget {
-      @include span-columns(4);
+      @include span(4);
 
       &:nth-child(3n) {
-        @include omega();
+        @include last();
       }
     }
   }

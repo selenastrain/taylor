@@ -55,10 +55,8 @@ Plugins
   Jetpack
   Gravity Forms
 --------------------------------------------------------------*/
-
-@import "bourbon/bourbon";
+@import "../../bower_components/susy/sass/susy";
 @import "defaults/grid-settings";
-@import "neat/neat";
 @import "defaults/variables";
 @import "defaults/mixins";
 

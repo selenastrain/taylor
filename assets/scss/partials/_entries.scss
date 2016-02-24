@@ -11,7 +11,7 @@
   border: $base-border;
   word-wrap: break-word;
 
-  @include media($small-screen-up) {
+  @include breakpoint(medium) {
     padding: $content-spacing;
   }
 }
@@ -108,7 +108,7 @@
   width: 4em;
   vertical-align: top;
 
-  @include media($smaller-screen-up) {
+  @include breakpoint(small) {
     float: left;
     margin-right: $content-spacing-half;
     margin-bottom: $content-spacing-half;

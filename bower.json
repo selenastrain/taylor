@@ -1,0 +1,21 @@
+{
+  "name": "taylor",
+  "description": "WordPress starter theme using Grunt",
+  "main": "",
+  "authors": [
+    "Selena Strain <s@selenastrain.com>"
+  ],
+  "homepage": "https://github.com/selenastrain/taylor",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12"
+  }
+}

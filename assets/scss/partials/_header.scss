@@ -2,7 +2,7 @@
   background-color: $alt-background-color;
   padding: 0 5%;
 
-  @include media($small-screen-up) {
+  @include breakpoint(medium) {
     padding: 0;
   }
 
@@ -16,7 +16,7 @@
 }
 
 .site-title {
-  
+
   a,
   a:hover,
   a:focus {

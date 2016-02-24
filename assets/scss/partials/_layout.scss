@@ -16,18 +16,19 @@
   padding-right: 5%;
   max-width: 768px;
 
-  @include media($small-screen-up) {
+  @include breakpoint(medium) {
     padding-left: 0;
     padding-right: 0;
   }
 
-  @include media($medium-screen-up) {
+  @include breakpoint(large) {
     max-width: 960px;
   }
 
-  @include media($large-screen-up) {
+  @include breakpoint(wide) {
     max-width: 1140px;
   }
+
 }
 
 /* Column Widths and Positions
@@ -40,28 +41,27 @@
   padding: 0;
 }
 
-@include media($medium-screen-up) {
-
+@include breakpoint(large) {
   .layout-1c-narrow .content-area {
-    padding: 0 15%;
+    @include span(8);
+    @include squish(2);
   }
+
   .layout-2c-l .content-area,
   .layout-2c-r .content-area {
-    @include span-columns(8);
+    @include span(8);
   }
 
   .layout-2c-r .content-area {
-    @include omega();
-    float: right;
+    @include last();
   }
 
   .sidebar-primary {
-    @include span-columns(4);
-  }
+    @include span(4);
 
-  .layout-2c-l .sidebar-primary {
-    @include omega();
-    float: right;
+    .layout-2c-l & {
+      @include last();
+    }
   }
 }
 
@@ -73,38 +73,38 @@
 /* Column Classes
 --------------------------------------- */
 
-@include media($small-screen-up) {
+@include breakpoint(medium) {
 
   .one-half {
-    @include span-columns(6);
+    @include span(6);
   }
 
   .one-third {
-    @include span-columns(4);
+    @include span(4);
   }
 
   .two-thirds {
-    @include span-columns(8);
+    @include span(8);
   }
 
   .one-fourth {
-    @include span-columns(3);
+    @include span(3);
   }
 
   .three-fourths {
-    @include span-columns(9);
+    @include span(9);
   }
 
   .one-sixth {
-    @include span-columns(2);
+    @include span(2);
   }
 
   .five-sixths {
-    @include span-columns(10);
+    @include span(10);
   }
 
   .last {
-    @include omega();
-    clear: right;
+    @include last();
   }
+
 }
