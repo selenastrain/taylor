@@ -20,17 +20,17 @@
 		<header <?php hybrid_attr( 'header' ); ?>>
 
 			<div class="wrap">
-				<a href="#" class="menu-toggle"><i class="fa fa-navicon"></i>Menu</a>
+				<a href="#" class="menu-toggle"><i class="fa fa-navicon"></i></a>
 
 				<div <?php hybrid_attr( 'branding' ); ?>>
 					<?php hybrid_site_title(); ?>
 					<?php hybrid_site_description(); ?>
 				</div><!-- .site-branding -->
+
+				<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template ?>
 			</div>
 
 		</header><!-- #masthead -->
-
-		<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template ?>
 
 		<div id="content" class="site-content">
 
