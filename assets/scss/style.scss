@@ -3,7 +3,7 @@ Theme Name: Taylor
 Theme URI: http://selenastrain.com/taylor/
 Author: Selena Strain
 Author URI: http://selenastrain.com/
-Description: Taylor is a starter theme using Grunt, Sass, Bourbon, Neat and Hybrid Core.
+Description: Taylor is a starter theme using Grunt, Sass, Susy and Hybrid Core.
 Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -56,6 +56,7 @@ Plugins
   Gravity Forms
 --------------------------------------------------------------*/
 @import "../../bower_components/susy/sass/susy";
+@import "defaults/functions";
 @import "defaults/grid-settings";
 @import "defaults/variables";
 @import "defaults/mixins";
