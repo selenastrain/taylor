@@ -1,6 +1,7 @@
 .site-header {
   background-color: $alt-background-color;
   padding: 0 5%;
+  border-bottom: $base-border;
 
   @include breakpoint(medium) {
     padding: 0;
@@ -12,10 +13,15 @@
 }
 
 .site-branding {
-  padding: 10px 0;
+
+  @include breakpoint(large) {
+    @include span(4);
+  }
+
 }
 
 .site-title {
+  margin-bottom: 0;
 
   a,
   a:hover,
@@ -26,5 +32,6 @@
 
 .site-description {
   @include font-size(18);
+  margin-bottom: 0;
   line-height: $base-line-height;
 }
