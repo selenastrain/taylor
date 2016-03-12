@@ -19,6 +19,7 @@
   @include breakpoint(medium) {
     padding-left: 0;
     padding-right: 0;
+    max-width: 780px;
   }
 
   @include breakpoint(large) {
