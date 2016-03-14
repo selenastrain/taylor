@@ -9,18 +9,20 @@
 ?>
 
     </div><!-- #primary -->
-    
+
     <?php hybrid_get_sidebar( 'primary' ); // Loads the sidebar/primary.php template ?>
-    
+
 	</div><!-- #content -->
 
   <?php hybrid_get_sidebar( 'subsidiary' ); // Loads the sidebar/subsidiary.php template ?>
 
-  <?php hybrid_get_menu( 'subsidiary' ); // Loads the menu/subsidiary.php template ?>
+
 
 	<footer <?php hybrid_attr( 'footer' ); ?>>
 
 		<div class="wrap">
+
+      <?php hybrid_get_menu( 'subsidiary' ); // Loads the menu/subsidiary.php template ?>
 
       <p class="credit">
         <?php printf(
