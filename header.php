@@ -35,5 +35,3 @@
 		<div id="content" class="site-content">
 
 			<div id="primary" class="content-area">
-
-				<?php hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template ?>
