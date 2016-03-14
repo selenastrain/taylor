@@ -27,6 +27,7 @@
 .widget-title {
   margin-bottom: $content-spacing / 2;
   @include font-size(18);
+  font-weight: 600;
 }
 
 .widget_calendar th,
