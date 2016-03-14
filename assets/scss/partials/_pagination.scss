@@ -2,27 +2,26 @@
 --------------------------------------- */
 .pagination {
   margin: 0 0 $content-spacing;
+  text-align: center;
 
   .page-numbers {
-    background: $dark-gray;
-    padding: 10px 12px;
-    color: #fff;
-
-    &:hover {
-      color: #fff;
-    }
+    background: shade($alt-light-gray, 5);
+    padding: 10px 16px;
+    border-radius: 2px;
   }
 
   .current {
     background: $action-color;
+    color: #fff;
   }
 
   a {
-    color: #fff;
+    color: $base-font-color;
 
     &:hover,
     &:focus {
       background: $action-color;
+      color: #fff;
     }
   }
 }
