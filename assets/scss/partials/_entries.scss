@@ -7,8 +7,6 @@
 .entry {
   margin: 0 0 $content-spacing;
   padding: $content-spacing-half;
-  background-color: $alt-background-color;
-  border: $base-border;
   word-wrap: break-word;
 
   @include breakpoint(medium) {
