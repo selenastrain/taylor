@@ -48,7 +48,7 @@ function taylor_setup() {
 	) );
 
 	// Handles content width for embeds and images
-	// Larget size based on the theme's layouts
+	// Largest size based on the theme's layouts
 	hybrid_set_content_width( 1140 );
 }
 endif; // taylor_setup
