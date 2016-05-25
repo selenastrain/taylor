@@ -52,6 +52,7 @@ $all-text-inputs-hover:  assign-inputs($text-inputs-list, hover);
 
 // Button Inputs
 $buttons-list: 'button',
+               '.button',
                'input[type="button"]',
                'input[type="reset"]',
                'input[type="submit"]';
