@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.0
+- Switched from Bourbon and Neat to Susy (add link to Susy)
+
+
 ## 1.1.0
 - Switched from [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer) to [grunt-postcss](https://github.com/nDmitry/grunt-postcss)
 - Updated [Bourbon](http://bourbon.io) to 4.2.6
