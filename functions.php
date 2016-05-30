@@ -13,6 +13,7 @@ new Hybrid();
 
 // Load theme-specific files
 require_once( $taylor_dir . 'inc/attr.php' );
+require_once( $taylor_dir . 'inc/customize.php' );
 
 if ( ! function_exists( 'taylor_setup' ) ) :
 /**

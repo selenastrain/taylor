@@ -23,7 +23,7 @@
 				<a href="#" class="menu-toggle"><i class="fa fa-navicon"></i></a>
 
 				<div <?php hybrid_attr( 'branding' ); ?>>
-					<?php hybrid_site_title(); ?>
+					<?php taylor_get_logo(); ?>
 					<?php hybrid_site_description(); ?>
 				</div><!-- .site-branding -->
 
