@@ -318,12 +318,12 @@ figure {
 
 blockquote {
   border-left: 2px solid #ddd;
-  color: #595959;
+  color: #525252;
   margin: 1.625em 0;
   padding-left: 0.8125em; }
 
 cite {
-  color: #737373; }
+  color: #666666; }
   cite:before {
     content: "\2014 \00A0"; }
 
@@ -372,7 +372,7 @@ big {
 /* Forms
 --------------------------------------- */
 fieldset {
-  background: #f7f7f7;
+  background: #e0e0e0;
   border: 1px solid #ddd;
   margin: 0 0 0.8125em;
   padding: 1.625em; }
@@ -519,7 +519,7 @@ dl {
 
 /* Buttons
 --------------------------------------- */
-button, input[type="button"], input[type="reset"], input[type="submit"] {
+button, .button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
   background-color: #477dca;
   border: 0;
@@ -539,13 +539,13 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
-  button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+  button:hover, button:focus, .button:hover, .button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
     background-color: #3964a2;
     color: #fff; }
-  button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
+  button:disabled, .button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
-    button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
+    button:disabled:hover, .button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
       background-color: #477dca; }
 
 /* --------------------------------------------------------------
@@ -559,24 +559,28 @@ Structure and Layout
 .site-content {
   padding-top: 2em; }
 
-.site-content,
+.layout-2c-l .site-content,
+.layout-2c-r .site-content,
 .wrap {
   margin: 0 auto;
   padding-left: 5%;
   padding-right: 5%;
   max-width: 768px; }
   @media (min-width: 810px) {
-    .site-content,
+    .layout-2c-l .site-content,
+    .layout-2c-r .site-content,
     .wrap {
       padding-left: 0;
       padding-right: 0;
       max-width: 780px; } }
   @media (min-width: 1023px) {
-    .site-content,
+    .layout-2c-l .site-content,
+    .layout-2c-r .site-content,
     .wrap {
       max-width: 960px; } }
   @media (min-width: 1200px) {
-    .site-content,
+    .layout-2c-l .site-content,
+    .layout-2c-r .site-content,
     .wrap {
       max-width: 1140px; } }
 
