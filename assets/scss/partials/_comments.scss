@@ -7,7 +7,7 @@
   border: $base-border;
   word-wrap: break-word;
 
-  @include breakpoint(medium) {
+  @include media(">medium") {
     padding: $content-spacing;
   }
 }
@@ -37,7 +37,7 @@
     padding: $content-spacing-half;
     border-bottom: $base-border;
 
-    @include breakpoint(medium) {
+    @include media(">medium") {
       padding: $content-spacing;
     }
 

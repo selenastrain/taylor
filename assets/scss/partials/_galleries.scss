@@ -17,7 +17,7 @@
 		margin: 0 auto;
 	}
 
-	@include breakpoint(medium) {
+	@include media(">medium") {
 		.gallery-columns-2 & {
 			@include gallery(6);
 		}

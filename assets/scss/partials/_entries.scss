@@ -6,12 +6,8 @@
 
 .entry {
   margin: 0 0 $content-spacing;
-  padding: $content-spacing-half;
+  padding: 0 0 $content-spacing-half;
   word-wrap: break-word;
-
-  @include breakpoint(medium) {
-    padding: $content-spacing;
-  }
 }
 
 .entry-meta {
@@ -114,7 +110,7 @@
   width: 4em;
   vertical-align: top;
 
-  @include breakpoint(small) {
+  @include media(">small") {
     float: left;
     margin-right: $content-spacing-half;
     margin-bottom: $content-spacing-half;

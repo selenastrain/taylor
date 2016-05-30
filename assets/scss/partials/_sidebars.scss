@@ -17,7 +17,7 @@
     border: $base-border;
     padding: $content-spacing-half;
 
-    @include breakpoint(medium) {
+    @include media(">medium") {
       padding: 40px;
     }
   }
@@ -33,7 +33,7 @@
     background: none;
     border: none;
 
-    @include breakpoint(medium) {
+    @include media(">medium") {
       padding: $content-spacing;
     }
   }

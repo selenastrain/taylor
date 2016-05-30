@@ -2,7 +2,7 @@
   padding: 0 5%;
   border-bottom: $base-border;
 
-  @include breakpoint(medium) {
+  @include media(">medium") {
     padding: 0;
   }
 
@@ -13,7 +13,7 @@
 
 .site-branding {
 
-  @include breakpoint(large) {
+  @include media(">large") {
     @include span(4);
   }
 

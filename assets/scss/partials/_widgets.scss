@@ -38,7 +38,7 @@
 /* Subsidiary Widgets
 --------------------------------------- */
 
-@include breakpoint(large) {
+@include media(">large") {
 
   .sidebar-col-2 {
     .widget {

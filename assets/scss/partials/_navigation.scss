@@ -24,7 +24,7 @@
 
   .sub-menu {
 
-    @include breakpoint(medium) {
+    @include media(">medium") {
       left: -999em;
       z-index: 99;
       position: absolute;
@@ -55,7 +55,7 @@
     }
   }
 
-  @include breakpoint(medium) {
+  @include media(">medium") {
     .menu-item:hover,
     .menu-item-hover,
     .menu-item:focus {
@@ -79,7 +79,7 @@
   display: none;
   // background: $nav-background-color;
 
-  @include breakpoint(large) {
+  @include media(">large") {
     @include span(8);
     @include last();
     display: block;
@@ -89,7 +89,7 @@
   .menu-item {
     display: block;
 
-    @include breakpoint(large) {
+    @include media(">large") {
       display: inline-block;
     }
   }
@@ -133,7 +133,7 @@
     @include font-size(40);
   }
 
-  @include breakpoint(large) {
+  @include media(">large") {
     display: none;
   }
 }

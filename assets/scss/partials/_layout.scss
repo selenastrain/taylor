@@ -17,17 +17,17 @@
   padding-right: 5%;
   max-width: 768px;
 
-  @include breakpoint(medium) {
+  @include media(">medium") {
     padding-left: 0;
     padding-right: 0;
     max-width: 780px;
   }
 
-  @include breakpoint(large) {
+  @include media(">large") {
     max-width: 960px;
   }
 
-  @include breakpoint(wide) {
+  @include media(">wide") {
     max-width: 1140px;
   }
 
@@ -43,7 +43,7 @@
   padding: 0;
 }
 
-@include breakpoint(large) {
+@include media(">large") {
   .layout-1c-narrow .content-area {
     @include span(8);
     @include squish(2);
@@ -75,7 +75,7 @@
 /* Column Classes
 --------------------------------------- */
 
-@include breakpoint(medium) {
+@include media(">medium") {
 
   .one-half {
     @include span(6);
