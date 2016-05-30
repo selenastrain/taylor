@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "WordPress starter theme using Grunt",
   "devDependencies": {
-    "autoprefixer-core": "~5.2.1",
+    "autoprefixer": "^6.3.6",
     "grunt": "~0.4.5",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-csscomb": "~3.0.1",
