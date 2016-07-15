@@ -35,8 +35,6 @@ function taylor_setup() {
 
 	add_theme_support( 'get-the-image' );
 
-	add_theme_support( 'breadcrumb-trail' );
-
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
