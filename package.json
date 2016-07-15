@@ -1,6 +1,6 @@
 {
   "name": "taylor",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "WordPress starter theme using Grunt",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
