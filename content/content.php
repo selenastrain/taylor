@@ -31,13 +31,13 @@
 
   <?php else : // If not viewing a single post ?>
 
-    <?php get_the_image( 
-      array( 
-        'size'    => 'taylor-full', 
+    <?php get_the_image(
+      array(
+        'size'    => 'taylor-full',
         'order'   => array( 'featured' ),
         'before'  => '<div class="featured-media">',
         'after'   => '</div>'
-      ) 
+      )
     ); ?>
 
     <header class="entry-header">
@@ -51,18 +51,17 @@
         <span class="sep">&mdash;</span>
         <?php comments_popup_link( __( 'Leave a comment', 'taylor' ), __( '1 Comment', 'taylor' ), __( '% Comments', 'taylor' ), 'comments-link', '' ); ?>
       </div><!-- .entry-meta -->
-      
+
     </header><!-- .entry-header -->
 
-    <div <?php hybrid_attr( 'entry-summary' ); ?>>
-      <?php the_excerpt(); ?>
-    </div><!-- .entry-summary -->
+    <div <?php hybrid_attr( 'entry-content' ); ?>>
+      <?php the_content(); ?>
+    </div><!-- .entry-content -->
 
     <footer class="entry-footer">
       <div class="entry-meta">
         <?php hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => __( 'Posted in %s', 'taylor' ) ) ); ?>
         <?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => __( 'Tagged %s', 'taylor' ) ) ); ?>
-        <?php edit_post_link( __( 'Edit', 'taylor' ), '<span class="edit-link">', '</span>' ); ?>
       </div>
     </footer><!-- .entry-footer -->
 
