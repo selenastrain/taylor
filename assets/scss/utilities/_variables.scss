@@ -2,7 +2,7 @@
 $helvetica:           "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 $georgia:             "Georgia", "Cambria", "Times New Roman", "Times", serif;
 $monospace:           "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
-$sans-serif:          'Lato', $helvetica ;
+$sans-serif:          "Lato", $helvetica ;
 $serif:               $georgia;
 $base-font-family:    $sans-serif;
 $heading-font-family: $base-font-family;
@@ -12,24 +12,24 @@ $pre-font-family:     "Courier 10 Pitch", Courier, monospace;
 // Font Sizes
 $em-base:        16px;
 $base-font-size: 18;
-$h1-font-size: 36;
-$h2-font-size: 32;
-$h3-font-size: 28;
-$h4-font-size: 25;
-$h5-font-size: 22;
-$h6-font-size: 20;
+$h1-font-size:   36;
+$h2-font-size:   32;
+$h3-font-size:   28;
+$h4-font-size:   25;
+$h5-font-size:   22;
+$h6-font-size:   20;
 
 // Line height
 $base-line-height:      1.625;
 $heading-line-height:   1.25;
 
 // Other Sizes
-$base-border-radius:      3px;
-$base-spacing:            $base-line-height * 1em;
-$small-spacing:           $base-spacing / 2;
-$content-spacing:         2em;
-$content-spacing-half:    $content-spacing / 2;
-$base-z-index:            0;
+$base-border-radius:    3px;
+$base-spacing:          $base-line-height * 1em;
+$small-spacing:         $base-spacing / 2;
+$content-spacing:       2em;
+$content-spacing-half:  $content-spacing / 2;
+$base-z-index:          0;
 
 // Colors
 $blue:            #477dca;
@@ -41,28 +41,28 @@ $alt-light-gray:  #f9f9f9;
 $alt-medium-gray: #e0e0e0;
 
 // Font Colors
-$base-font-color:   $dark-gray;
-$action-color:      $blue;
+$base-font-color: $dark-gray;
+$action-color:    $blue;
 
 // Border
 $base-border-color: $light-gray;
 $base-border:       1px solid $base-border-color;
 $abbr-border-color: #666;
 
-// Background Color
-$base-background-color:   #fff;
-$nav-background-color:    $action-color;
-$alt-background-color:    $alt-light-gray;
-$pre-background-color:    #eee;
-$ins-background-color:    #fff9c0;
+// Background Colors
+$base-background-color: #fff;
+$nav-background-color:  $action-color;
+$alt-background-color:  $alt-light-gray;
+$pre-background-color:  #eee;
+$ins-background-color:  #fff9c0;
 
 // Screen Reader Colors
 $screen-background: #f1f1f1;
 $screen-text:       #21759b;
 
 // Forms
-$form-box-shadow:         inset 0 1px 3px rgba(#000, 0.06);
-$form-box-shadow-focus:   $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+$form-box-shadow:       inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
 
 // Animations
 $base-duration: 150ms;

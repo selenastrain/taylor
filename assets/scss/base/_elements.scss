@@ -1,7 +1,9 @@
+/* Elements
+--------------------------------------- */
 a {
   color: $action-color;
   text-decoration: none;
-  transition: $base-duration $base-timing;
+  transition: color $base-duration $base-timing;
 
   &:active,
   &:focus,
@@ -20,7 +22,6 @@ hr {
 
 img,
 picture {
-  height: auto;
   margin: 0;
   max-width: 100%;
 }

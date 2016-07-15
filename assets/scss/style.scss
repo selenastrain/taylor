@@ -19,119 +19,13 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-/*--------------------------------------------------------------
-TABLE OF CONTENTS:
-----------------------------------------------------------------
-Normalize
-Defaults
-  Typography
-  Elements
-  Forms
-  Tables
-  Lists
-  Buttons
-Structure and Layout
-  Site Containers
-  Column Widths and Positions
-  Column Classes
-Header
-Navigation
-	Menus
-  Pagination
-Accessibility
-Alignments
-Clearings
-Content
-  Entries
-	Asides
-	Comments
-Sidebars
-Footer
-Widgets
-Media
-	Captions
-	Galleries
-Plugins
-  Jetpack
-  Gravity Forms
---------------------------------------------------------------*/
 @import "../../bower_components/susy/sass/susy";
 @import "../../bower_components/include-media/dist/include-media";
-@import "defaults/functions";
-@import "defaults/grid-settings";
-@import "defaults/variables";
-@import "defaults/mixins";
+@import "utilities/index";
 
-/*--------------------------------------------------------------
-Normalize
---------------------------------------------------------------*/
-@import "defaults/normalize";
-
-/* --------------------------------------------------------------
-Defaults
--------------------------------------------------------------- */
-@import "defaults/base";
-
-/* --------------------------------------------------------------
-Structure and Layout
--------------------------------------------------------------- */
-@import "partials/layout";
-
-/* --------------------------------------------------------------
-Header
--------------------------------------------------------------- */
-@import "partials/header";
-
-/*--------------------------------------------------------------
-Navigation
---------------------------------------------------------------*/
-@import "partials/navigation";
-@import "partials/pagination";
-
-/*--------------------------------------------------------------
-Accessibility
---------------------------------------------------------------*/
-@import "partials/accessibility";
-
-/*--------------------------------------------------------------
-Alignments
---------------------------------------------------------------*/
-@import "partials/alignments";
-
-/*--------------------------------------------------------------
-Clearings
---------------------------------------------------------------*/
-@import "partials/clearings";
-
-/*--------------------------------------------------------------
-Content
---------------------------------------------------------------*/
-@import "partials/entries";
-@import "partials/comments";
-
-/* --------------------------------------------------------------
-Sidebars
--------------------------------------------------------------- */
-@import "partials/sidebars";
-
-/* --------------------------------------------------------------
-Footer
--------------------------------------------------------------- */
-@import "partials/footer";
-
-/*--------------------------------------------------------------
-Widgets
---------------------------------------------------------------*/
-@import "partials/widgets";
-
-/*--------------------------------------------------------------
-Media
---------------------------------------------------------------*/
-@import "partials/media";
-@import "partials/captions";
-@import "partials/galleries";
-
-/* --------------------------------------------------------------
-Plugins
--------------------------------------------------------------- */
-@import "partials/plugins";
+@import "base/index";
+@import "structure/index";
+@import "modules/index";
+@import "views/index";
+@import "widgets/index";
+@import "plugins/index";

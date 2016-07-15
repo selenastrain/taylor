@@ -61,7 +61,9 @@
   clear: both;
 
   ul {
-    @extend %default-ul;
+    list-style-type: disc;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
 
     ul {
       margin-bottom: 0;
@@ -69,7 +71,9 @@
   }
 
   ol {
-    @extend %default-ol;
+    list-style-type: decimal;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
 
     ol {
       margin-bottom: 0;
