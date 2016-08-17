@@ -1,8 +1,8 @@
 # Changelog
 
 ## 2.0.0
-- Switched from Bourbon and Neat to Susy (add link to Susy)
-
+- Switched from Bourbon and Neat to [Susy](http://susy.oddbird.net)
+- Added [Include Media](http://include-media.com) for media queries
 
 ## 1.1.0
 - Switched from [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer) to [grunt-postcss](https://github.com/nDmitry/grunt-postcss)
