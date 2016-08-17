@@ -1,0 +1,65 @@
+/* Pagination
+--------------------------------------- */
+.pagination {
+  margin: 0 0 $content-spacing;
+  text-align: center;
+
+  .page-numbers {
+    background: shade($alt-light-gray, 5);
+    padding: 10px 16px;
+    border-radius: 2px;
+  }
+
+  .current {
+    background: $action-color;
+    color: #fff;
+  }
+
+  a {
+    color: $base-font-color;
+
+    &:hover,
+    &:focus {
+      background: $action-color;
+      color: #fff;
+    }
+  }
+}
+
+/* Post Navigation
+--------------------------------------- */
+.posts-navigation,
+.post-navigation {
+  word-wrap: break-word;
+
+  .site-main & {
+    margin: 0 0 $base-spacing;
+    overflow: hidden;
+  }
+
+  & .nav-previous {
+    float: left;
+    width: 50%;
+  }
+
+  & .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+  }
+}
+
+.post-navigation {
+  line-height: $base-line-height;
+}
+
+.comments-nav {
+  padding-top: $content-spacing;
+
+  a,
+  .page-numbers {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,22 @@
+// Susy global settings
+$susy: (
+  columns: 12,
+  global-box-sizing: border-box,
+  container: 1140px,
+);
+
+@include border-box-sizing;
+
+// Breakpoints
+
+$breakpoints: (
+  small:  480px,
+  medium: 810px,
+  large:  1023px,
+  wide:   1200px
+);
+
+// small = smaller-screen-up
+// medium = small-screen-up
+// large = medium-screen-up
+// wide = large-screen-up

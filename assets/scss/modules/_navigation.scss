@@ -1,0 +1,138 @@
+/*--------------------------------------------------------------
+Navigation
+--------------------------------------------------------------*/
+.navigation {
+  clear: both;
+  line-height: 1;
+  width: 100%;
+
+  .menu-item {
+    display: inline-block;
+    text-align: left;
+    @include font-size(16);
+
+    a {
+      display: block;
+      padding: 20px 15px;
+      color: $base-font-color;
+    }
+  }
+
+  a:hover,
+  a:focus,
+  .current-menu-item a {
+    color: $action-color;
+  }
+
+  .sub-menu {
+
+    @include media(">medium") {
+      left: -999em;
+      z-index: 99;
+      position: absolute;
+      width: 200px;
+      opacity: 0;
+      border-top: $base-border;
+
+      a {
+        background-color: #fff;
+        border: $base-border;
+        border-top: none;
+        color: $dark-gray;
+        padding: 20px;
+        width: 200px;
+        position: relative;
+      }
+
+      .current-menu-item {
+        a:hover,
+        a:focus {
+          color: $action-color;
+        }
+      }
+
+      .sub-menu {
+        margin: -57px 0 0 199px;
+      }
+    }
+  }
+
+  @include media(">medium") {
+    .menu-item:hover,
+    .menu-item-hover,
+    .menu-item:focus {
+      position: static;
+    }
+
+    .menu-item:hover > .sub-menu,
+    .menu-item-hover > .sub-menu,
+    .menu-item:focus > .sub-menu {
+      left: auto;
+      opacity: 1;
+      padding: 0;
+    }
+  }
+}
+
+/* Main Navigation
+--------------------------------------- */
+.main-navigation {
+  clear: none;
+  display: none;
+
+  @include media(">large") {
+    @include span(8);
+    @include last();
+    display: block;
+    text-align: right;
+  }
+
+  .menu-item {
+    display: block;
+
+    @include media(">large") {
+      display: inline-block;
+    }
+  }
+
+  a {
+    color: $base-font-color;
+  }
+
+  a:hover,
+  a:focus,
+  .current-menu-item a {
+    color: $action-color;
+  }
+
+  .sub-menu {
+    padding-left: 20px;
+  }
+}
+
+/* Subsidiary Navigation
+--------------------------------------- */
+.subsidiary-navigation {
+
+  a:hover,
+  a:focus {
+    color: shade($action-color, 25%);
+  }
+}
+
+/* Mobile Navigation
+--------------------------------------- */
+.menu-toggle {
+  display: block;
+  float: right;
+  line-height: 1;
+
+  i {
+    margin-right: 5px;
+    @include font-size(40);
+  }
+
+  @include media(">large") {
+    display: none;
+  }
+}

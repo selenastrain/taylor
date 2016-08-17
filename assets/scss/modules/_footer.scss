@@ -1,0 +1,13 @@
+/* --------------------------------------------------------------
+Footer
+-------------------------------------------------------------- */
+.site-footer {
+  border-top: $base-border;
+  @include font-size(16);
+  padding: $content-spacing 0;
+  text-align: center;
+
+  .credit {
+    margin-top: $small-spacing;
+  }
+}

@@ -1,0 +1,38 @@
+// Mixins
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 16) {
+  font-size: $sizeValue + px;
+  font-size: rem($sizeValue);
+}
+
+// Border radius
+@mixin border-radius($radius) {
+  background-clip: padding-box;
+  border-radius: $radius;
+}
+
+// Center block
+@mixin center-block {
+  display: block;
+  margin: 0 auto;
+}
+
+// Clearfix mixin
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+// Placeholder mixin
+@mixin placeholder {
+  $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+  @each $placeholder in $placeholders {
+    &:#{$placeholder}-placeholder {
+      @content;
+    }
+  }
+}

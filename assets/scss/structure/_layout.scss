@@ -1,0 +1,116 @@
+/* --------------------------------------------------------------
+Structure and Layout
+-------------------------------------------------------------- */
+
+/* Site Containers
+--------------------------------------- */
+
+.site {
+  position: relative;
+}
+
+.site-content {
+  padding-top: $content-spacing;
+}
+
+.layout-2c-l .site-content,
+.layout-2c-r .site-content,
+.wrap {
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  max-width: 768px;
+
+  @include media(">medium") {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 780px;
+  }
+
+  @include media(">large") {
+    max-width: 960px;
+  }
+
+  @include media(">wide") {
+    max-width: 1140px;
+  }
+
+}
+
+/* Column Widths and Positions
+--------------------------------------- */
+
+/* Content Area
+--------------------------------------- */
+
+.layout-1c-narrow .content-area {
+  padding: 0;
+}
+
+@include media(">large") {
+  .layout-1c-narrow .content-area {
+    @include span(8);
+    @include squish(2);
+  }
+
+  .layout-2c-l .content-area,
+  .layout-2c-r .content-area {
+    @include span(8);
+  }
+
+  .layout-2c-r .content-area {
+    @include last();
+  }
+
+  .sidebar-primary {
+    @include span(4);
+
+    .layout-2c-l & {
+      @include last();
+    }
+  }
+}
+
+.layout-1c .sidebar-primary,
+.layout-1c-narrow .sidebar {
+  display: none;
+}
+
+/* Column Classes
+--------------------------------------- */
+
+@include media(">medium") {
+
+  .one-half {
+    @include span(6);
+  }
+
+  .one-third {
+    @include span(4);
+  }
+
+  .two-thirds {
+    @include span(8);
+  }
+
+  .one-fourth {
+    @include span(3);
+  }
+
+  .three-fourths {
+    @include span(9);
+  }
+
+  .one-sixth {
+    @include span(2);
+  }
+
+  .five-sixths {
+    @include span(10);
+  }
+
+  .last {
+    @include last();
+  }
+
+}

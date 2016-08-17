@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-  
+
   // Menu Toggle
   $('.menu-toggle').click(function() {
     $('.main-navigation').slideToggle(100);
@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
     var current_width = $(window).width();
 
     // If width is greater than iPad size
-    if ( current_width > 810 ) {
+    if ( current_width > 1023 ) {
       $('.main-navigation').show();
     }
   });

@@ -1,0 +1,67 @@
+/*--------------------------------------------------------------
+Widgets
+--------------------------------------------------------------*/
+.widget {
+  margin: 0 0 $base-spacing;
+  word-wrap: break-word;
+
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
+
+  ol {
+    list-style-type: decimal;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
+  }
+
+  li li {
+    border: 0;
+    margin: 0 0 0 30px;
+    padding: 0;
+  }
+
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+  display: none;
+}
+
+.widget-title {
+  margin-bottom: $content-spacing / 2;
+  @include font-size(18);
+  font-weight: 600;
+}
+
+.widget_calendar th,
+.widget_calendar td {
+  text-align: center;
+}
+
+/* Subsidiary Widgets
+--------------------------------------- */
+
+@include media(">large") {
+
+  .sidebar-col-2 {
+    .widget {
+      @include span(6);
+
+      &:nth-child(2n) {
+        @include last();
+      }
+    }
+  }
+
+  .sidebar-col-3 {
+    .widget {
+      @include span(4);
+
+      &:nth-child(3n) {
+        @include last();
+      }
+    }
+  }
+}

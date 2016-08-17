@@ -106,6 +106,25 @@ function taylor_register_styles() {
 add_action( 'wp_enqueue_scripts', 'taylor_register_styles', 4 );
 
 /**
+ * Adds site logo from customizer options if available, defaults to site title.
+ */
+function taylor_get_logo() {
+  $output = '';
+
+  if ( get_theme_mod( 'taylor_customize_logo' ) ) {
+    $output = '<h1 class="site-logo">';
+    $output .= '<a href="' . esc_url( home_url( '/' ) ) .'" rel="home"><img src="' . esc_url( get_theme_mod( 'taylor_customize_logo' ) ) . '" alt="' . esc_attr( get_bloginfo( 'name' ) ) .'" class="site-logo-image"/></a>';
+    $output .= '</h1>';
+  } else {
+    $output = hybrid_site_title();
+  }
+
+  echo $output;
+
+  // TODO: add apply_filters and docs on how to use
+}
+
+/**
  * Add theme support for Infinite Scroll.
  * See: http://jetpack.me/support/infinite-scroll/
  */

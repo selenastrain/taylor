@@ -1,0 +1,120 @@
+/* Media
+--------------------------------------- */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
+
+/* Captions
+--------------------------------------- */
+.wp-caption {
+	margin-bottom: $base-spacing;
+	max-width: 100%;
+
+	img[class*="wp-image-"] {
+		@include center-block;
+	}
+
+	.wp-caption-text {
+		margin: ($base-spacing / 2) 0;
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/* Galleries
+--------------------------------------- */
+.gallery {
+	@include container;
+	margin-bottom: $base-spacing;
+}
+
+.gallery-item {
+	line-height: 0;
+	padding: 0;
+	position: relative;
+	margin: 0 0 2.35765%;
+	text-align: center;
+
+	img {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	@include media(">medium") {
+		.gallery-columns-2 & {
+			@include gallery(6);
+		}
+
+		.gallery-columns-3 & {
+			@include gallery(4);
+		}
+
+		.gallery-columns-4 & {
+			@include gallery(3);
+		}
+
+		.gallery-columns-5 & {
+			@include gallery(2.4);
+		}
+
+		.gallery-columns-6 & {
+			@include gallery(2);
+		}
+
+		.gallery-columns-7 & {
+			@include gallery(1.71);
+		}
+
+		.gallery-columns-8 & {
+			@include gallery(1.5);
+		}
+
+		.gallery-columns-9 & {
+			@include gallery(1.33);
+		}
+
+		.gallery-caption {
+			transition: all 0.5s ease-in-out;
+			background: transparentize(#000, 0.5);
+			color: #fff;
+			line-height: 1.625;
+			@include font-size(16);
+			opacity: 0;
+			overflow: hidden;
+			padding: 10px;
+			position: absolute;
+			visibility: hidden;
+			width: 100%;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		&:hover .gallery-caption,
+		&:focus .gallery-caption {
+			transform: translate(0, -100%);
+			visibility: visible;
+			opacity: 1;
+
+			&:hover,
+			&:focus {
+				white-space: normal;
+				overflow: visible;
+			}
+		}
+	}
+}

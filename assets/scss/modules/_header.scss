@@ -1,0 +1,39 @@
+/* --------------------------------------------------------------
+Header
+-------------------------------------------------------------- */
+.site-header {
+  padding: 0 5%;
+  border-bottom: $base-border;
+
+  @include media(">medium") {
+    padding: 0;
+  }
+
+  .wrap {
+    padding: $content-spacing 0;
+  }
+}
+
+.site-branding {
+
+  @include media(">large") {
+    @include span(4);
+  }
+
+}
+
+.site-title {
+  margin-bottom: 0;
+
+  a,
+  a:hover,
+  a:focus {
+    color: $base-font-color;
+  }
+}
+
+.site-description {
+  @include font-size(18);
+  margin-bottom: 0;
+  line-height: $base-line-height;
+}

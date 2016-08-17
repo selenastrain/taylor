@@ -1,0 +1,43 @@
+/* --------------------------------------------------------------
+Sidebars
+-------------------------------------------------------------- */
+.sidebar {
+  @include font-size(16);
+
+  li {
+    border-bottom: $base-border;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  p:last-child,
+  ul > li:last-child {
+    margin-bottom: 0;
+  }
+
+  .widget {
+    background-color: #fff;
+    border: $base-border;
+    padding: $content-spacing-half;
+
+    @include media(">medium") {
+      padding: 40px;
+    }
+  }
+}
+
+.sidebar-subsidiary {
+  background: $alt-background-color;
+  border-top: $base-border;
+  margin-top: $content-spacing-half;
+  padding: $content-spacing-half 0;
+
+  .widget {
+    background: none;
+    border: none;
+
+    @include media(">medium") {
+      padding: $content-spacing;
+    }
+  }
+}
